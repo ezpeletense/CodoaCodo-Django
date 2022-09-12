@@ -25,20 +25,22 @@ def contador(cadena: str) -> dict:
     cadena = cadena.lower()
 
     # Inicializar el diccionario vacio
-    contador = {}
+    contador_dict = {}
 
     for palabra in cadena.split(' '):
-        if palabra not in contador:
-            contador.update({palabra: 1})
+        if palabra not in contador_dict:
+            contador_dict.update({palabra: 1})
         else:
-            contador[palabra] += 1
+            contador_dict[palabra] += 1
 
     if __name__ == '__main__':
-        return print(contador)
+        return print(contador_dict)
     else:
-        return contador
+        return contador_dict
 
 
+# balcones = io.open('.\ejercicios-integradores\setenta_balcones.txt',
+#                    'r', encoding='utf8').read()
 # contador("Uno, dos, tres.")
 # contador('¿Uno? ¡Dos! dos, tres, UNO. ')
-# contador(io.open('prueba.txt', 'r', encoding='utf8').read())
+# contador(balcones)
