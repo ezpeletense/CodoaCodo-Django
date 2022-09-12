@@ -10,15 +10,15 @@ from ejercicio3 import contador
 
 def mas_repetida(dict_palabras: dict) -> tuple:
     """Recibe un diccionario de frecuencias de aparición de
-    palabras y devuelve una tupla con la palabra más repetida
-    y su frecuencia.
+    palabras y devuelve una tupla con la(s) palabra(s) más 
+    repetida(s) y su(s) frecuencia(s).
 
     Args:
         contador (dict): diccionario de palabras[key] y sus
         respectivas frecuencias[value].
 
     Returns:
-        tuple: tupla con la palabra más repetida y su frecuencia.
+        mas_freq (tuple): tupla con la(s) palabra(s) más repetida(s) y su(s) frecuencia(s).
     """
 
     mas_freq = ['', 0]
@@ -31,12 +31,15 @@ def mas_repetida(dict_palabras: dict) -> tuple:
 
     mas_freq = tuple(mas_freq)
 
-    print(mas_freq)
+    if __name__ == '__main__':
+        return print(f'la(s) palabra(s) más repetida(s) del diccionario: {mas_freq}')
+    else:
+        return mas_freq
 
 
-mi_dict = contador('uno, uno, dos, tres, tres, tres, tres, tres')
-mi_otro_dict = contador(
-    'uno, uno, uno, dos, tres, tres, tres, cinco cinco, cinco')
+# mi_dict = contador('uno, uno, dos, tres, tres, tres, tres, tres')
+# mi_otro_dict = contador(
+#     'uno, uno, uno, dos, tres, tres, tres, cinco cinco, cinco')
 
-mas_repetida(mi_dict)
-mas_repetida(mi_otro_dict)
+# mas_repetida(mi_dict)
+# mas_repetida(mi_otro_dict)
