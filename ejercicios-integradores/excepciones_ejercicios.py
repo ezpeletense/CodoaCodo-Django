@@ -4,3 +4,7 @@ class PersonaDatoInvalidoError(Exception):
 
 class CuentaJovenTitularInvalidoError(Exception):
     pass
+
+
+class CuentaTitularInvalidoError(Exception):
+    pass

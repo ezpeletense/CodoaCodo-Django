@@ -73,13 +73,14 @@ class Persona:
 pablo = Persona("Pablo", 32, "35000000")
 print(pablo.mostrar())
 
-pablo.nombre = "Cloe"
-print(pablo.mostrar())
+# pablo.nombre = "Jacinto"
+# print(pablo.mostrar())
 
 # pablo.nombre = " "
 # print(pablo.mostrar())
 
-print(pablo.es_mayor_de_edad())
+
+print(pablo.es_mayor_de_edad())  # -> True
 
 pablo.edad = 17
-print(pablo.es_mayor_de_edad())
+print(pablo.es_mayor_de_edad())  # -> False
