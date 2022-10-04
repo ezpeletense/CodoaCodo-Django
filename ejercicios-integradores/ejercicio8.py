@@ -5,7 +5,6 @@ from ejercicio7 import Cuenta
 
 
 class CuentaJoven(Cuenta):
-    pass
 
     def __init__(self, titular, cantidad=0, bonificacion=0):
         super().__init__(titular, cantidad)
